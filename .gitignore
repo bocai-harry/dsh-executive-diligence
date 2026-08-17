@@ -1,0 +1,30 @@
+# ===== 敏感/本地文件：绝不入库 =====
+# .env 含 Cookie（等同登录态）与 Webhook，任何环境都不应提交
+**/.env
+*.env
+!.env.example
+
+# 本地登录态输出目录
+/envs/
+
+# 测试/运行产物
+*.log
+_posts.json
+state.json
+*.xlsx.tmp
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+
+# ===== 系统/编辑器 =====
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
