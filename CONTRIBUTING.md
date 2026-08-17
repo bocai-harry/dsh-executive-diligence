@@ -26,16 +26,23 @@
 3. 实测扫码登录 + 抓取，并把结论更新到 `docs/platform-matrix.md`（含匿名 Cookie 误触发等坑）
 4. 更新 `SKILL.md` 阶段 3 与 README
 
-## DCO（Developer Certificate of Origin）
+## DCO + CLA（贡献者许可，两者都需要）
 
-本项目贡献采用 DCO 机制（与 Apache 系一致）：每条提交须附带签名，表明你有权贡献且同意贡献可用于本项目（含未来商业版本）：
+本项目对贡献采用 **DCO + CLA 双重机制**，首个 PR 合入前两者都须满足：
 
-```bash
-git commit -s -m "feat: ..."
-# 提交信息末尾会自动带上：Signed-off-by: 你的名字 <邮箱>
-```
+1. **DCO（Developer Certificate of Origin）**：每条提交附带签名，表明你有权贡献：
+   ```bash
+   git commit -s -m "feat: ..."
+   # 提交信息末尾自动带上：Signed-off-by: 你的名字 <邮箱>
+   ```
+   未签名的提交会被拒绝合入。完整 DCO 文本见 https://developercertificate.org/ 。
 
-未签名的提交会被拒绝合入。完整 DCO 文本见 https://developercertificate.org/ 。
+2. **CLA（贡献者许可协议）**：签署 [CLA.md](CLA.md) 并把版权/专利授权给维护者，确保你的贡献可用于本项目**含未来商业版本**：
+   - 签署方式：填写并签名 [CLA.md](CLA.md)（个人贡献者许可协议），随首个 PR 一并提交，或发送给维护者；
+   - 企业员工贡献：请先取得雇主书面授权，并在 CLA「备注」栏注明雇主名称；
+   - 签署一次，对后续所有贡献持续有效。
+
+> DCO 是"我声明我有权贡献"，CLA 是"我把贡献的版权/专利授权给项目"——两者共同构成项目（含商业版）使用与再许可社区贡献的完整权利链。未签署 CLA 的贡献不会合入。
 
 ## 分支与提交
 

@@ -2,6 +2,14 @@
 
 本项目采用 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/) 风格，版本号遵循 [SemVer](https://semver.org/lang/zh-CN/)。
 
+## [Unreleased]
+
+### 新增
+
+- 贡献者许可协议 [CLA.md](CLA.md)：贡献者在 DCO 之外签署 CLA，将贡献的版权/专利授权给维护者（含未来商业版本）
+- `CONTRIBUTING.md`：贡献机制升级为 DCO + CLA 双重要求
+- `README.md`：新增「赞助与商业支持」区块；`.github/FUNDING.yml` 启用 GitHub Sponsors 按钮（需在账号开启 Sponsors）
+
 ## [0.1.0] - 2026-08-17
 
 ### 新增（初始开源版）

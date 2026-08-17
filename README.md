@@ -53,8 +53,19 @@ python skill/scripts/build_ledger.py entries.json 台账.xlsx
 └── envs/                 # 本地 .env 输出目录（gitignore，不入库）
 ```
 
+## 赞助与商业支持
+
+核心功能**永久开源**（Apache-2.0），欢迎通过以下方式支持持续维护：
+
+- **GitHub Sponsors**：https://github.com/sponsors/bocai-harry （点击仓库右上角 Sponsor 按钮亦可）
+- 赞助 / 付费支持可获得的权益（规划中，欢迎通过 Issues 或仓库主页联系洽谈）：
+  - 新平台 / 新渠道的优先适配
+  - 平台接口变更的优先修复与技术支持
+  - 企业版（规划）：批量背调、审计日志、团队协作、飞书深度集成、托管部署
+- 商业合作 / 定制需求：GitHub Issues 或仓库主页联系邮箱
+
 ## 合规与许可
 
 - 背调涉及个人信息，仅限**公开信息 + 合法用途**，风险自负，详见 [docs/compliance.md](docs/compliance.md)
 - 本项目基于 **Apache-2.0** 开源，见 [LICENSE](LICENSE)；贡献见 [CONTRIBUTING.md](CONTRIBUTING.md)
-- 贡献者需在提交信息中附带 `Signed-off-by`（DCO），确保贡献可用于本项目（含未来商业版本）
+- 贡献者需同时满足 **DCO**（提交签名）与 **CLA**（[CLA.md](CLA.md) 授权），确保贡献可用于本项目（含未来商业版本）
