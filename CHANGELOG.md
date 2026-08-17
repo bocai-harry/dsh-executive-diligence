@@ -4,6 +4,11 @@
 
 ## [Unreleased]
 
+### 变更
+
+- 仓库更名为 `dsh-executive-diligence`，README / 描述突出 DeepSeek Harness（DSH）技能插件身份（由 DSH 编写并在其环境运行），并链接 [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)
+- topics 增加 `deepseek-harness` / `dsh` / `plugin`
+
 ### 新增
 
 - 贡献者许可协议 [CLA.md](CLA.md)：贡献者在 DCO 之外签署 CLA，将贡献的版权/专利授权给维护者（含未来商业版本）

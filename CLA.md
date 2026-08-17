@@ -8,7 +8,7 @@
 
 - **"贡献"**：你向本项目提交的任何内容，包括但不限于：代码、脚本、文档、配置、示例、测试、Issue / PR 描述中的实质性内容，无论形式与媒介。
 - **"维护者"**：本项目当前维护者 bocai-harry（GitHub: `bocai-harry`），及其后续合法承接方。
-- **"本项目"**：GitHub 仓库 `bocai-harry/executive-diligence` 及其发布的制品（Releases、打包物等）。
+- **"本项目"**：GitHub 仓库 `bocai-harry/dsh-executive-diligence` 及其发布的制品（Releases、打包物等）。
 
 ## 2. 版权授权（Grant of Copyright License）
 
