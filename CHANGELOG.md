@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+### 变更
+
+- 澄清定位：本项目是 DSH **Skill（技能）** 而非 DSH 插件；README 与 GitHub 仓库描述同步更新，移除 `dsh-plugin` topic
+
 ## [0.2.0] - 2026-08-17
 
 ### 变更

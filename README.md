@@ -1,6 +1,6 @@
 # DSH Executive Diligence（企业高管背调 Skill）
 
-> 本项目是一个 **DeepSeek Harness（DSH）技能插件**，由 DSH 编写并在其环境中运行（*DeepSeek Harness: Everything is a Plugin* → [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)）。安装为 DSH skill 后，agent 按 `skill/SKILL.md` 的工作流执行背调。
+> 本项目是一个 **DeepSeek Harness（DSH）Skill（技能）**，由 DSH 编写并在其环境中运行。它作为 skill 安装在 DSH 的 skills 目录（`$DSH_HOME/skills/`），agent 按 `skill/SKILL.md` 的工作流执行背调；配套 `scripts/` 是独立 Python 工具，**不是 DSH 插件**（DSH 插件是 cordis 插件，扩展 harness 进程本身；skill 是内容与指令包，不改变 harness 能力 → [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)）。
 
 基于公开信息的系统化企业高管/企业家背调工作流：**基础信息 → 全网检索 → 社交监控（可选）→ 事件脉络 → 报告与台账**，配套多平台扫码登录获取 Cookie、公众号检索、负面台账（Excel）生成等工具脚本。
 
