@@ -1,6 +1,6 @@
 [project]
 name = "executive-diligence"
-version = "0.1.0"
+version = "0.2.0"
 description = "DeepSeek Harness (DSH) 技能：企业高管背调（公开信息检索、多平台登录获取 Cookie、公众号检索、负面台账）"
 readme = "README.md"
 requires-python = ">=3.10"
