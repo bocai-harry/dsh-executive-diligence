@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 r"""多平台登录获取 Cookie 的交互入口（skill 用）。
 
 包装 scripts/get_cookies.py：列出平台让你选，然后跑对应平台的扫码登录，

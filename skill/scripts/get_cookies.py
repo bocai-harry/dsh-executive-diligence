@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 r"""定向监测平台 Cookie 获取脚本（Playwright 浏览器登录，小白友好）。
 
 打开一个真实浏览器窗口，你在窗口里自己登录目标平台；登录完成后回到命令行按回车，
@@ -83,7 +82,7 @@ PLATFORMS = {
     },
     "wxweb": {
         "url": "https://web.wechat.com",
-        "hint": "请在打开的浏览器窗口里用微信扫码登录「微信网页版」。手机确认后等待自动完成（无关键 Cookie，建议配合 --signal）。",
+        "hint": "请在浏览器窗口用微信扫码登录微信网页版。手机确认后等待自动完成（无关键 Cookie，建议配 --signal）。",
         "key_cookie": "",
         "env_var": "WECHAT_WEB_COOKIE",
         "domain_marker": "wechat.com",
@@ -109,7 +108,7 @@ def collect_cookies(platform, signal_path, max_wait_minutes):
         if key_cookie:
             print(f">>> 运行模式：自动检测模式（stdin 非交互，不等待回车；等待关键 Cookie {key_cookie} 出现）")
         else:
-            print(f">>> 运行模式：本平台无关键 Cookie 且 stdin 非交互，无法按回车——请用 --signal 指定信号文件")
+            print(">>> 运行模式：本平台无关键 Cookie 且 stdin 非交互，无法按回车——请用 --signal 指定信号文件")
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False)

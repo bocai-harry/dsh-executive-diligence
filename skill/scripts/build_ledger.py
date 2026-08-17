@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 """企业高管背调：负面内容台账 生成/追加 脚本（Excel）。
 
 用法：
@@ -35,11 +34,10 @@ entries.json 格式（数组，每项一个台账行；未提供的字段留空�
 """
 import json
 import sys
-from copy import copy
 from pathlib import Path
 
 import openpyxl
-from openpyxl.styles import Font, PatternFill, Side, Border
+from openpyxl.styles import Border, Font, PatternFill, Side
 
 HEADERS = ["序号", "分组", "平台/账号", "标题/内容", "链接", "发布/时间", "内容定性",
            "主要侵权/违规点", "建议处置方式", "处置优先级", "预期成功率", "处置状态",

@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 r"""搜狗微信搜索检索工具（公众号文章/公众号主页，skill 用）。
 
 检索微信公众号内容并输出 JSON。**不包含微信视频号**——视频号没有公开网页检索
@@ -31,15 +30,19 @@ from datetime import datetime
 from pathlib import Path
 from urllib.parse import quote
 
-sys.stdout.reconfigure(encoding="utf-8")
 from playwright.sync_api import sync_playwright
+
+sys.stdout.reconfigure(encoding="utf-8")
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 BASE = "https://weixin.sogou.com/weixin"
 MAX_PAGES = 10
 
 EXTRACT_JS = """() => {
-    const pick = (root, sel) => { const n = root.querySelector(sel); return n ? n.textContent.trim().replace(/\\s+/g, ' ') : ''; };
+    const pick = (root, sel) => {
+        const n = root.querySelector(sel);
+        return n ? n.textContent.trim().replace(/\\s+/g, ' ') : '';
+    };
     let nodes = Array.from(document.querySelectorAll('.news-list > li'));
     if (nodes.length === 0) {
         // 兜底：按 sogou_vr 容器 id 抓（公众号主页等布局）
